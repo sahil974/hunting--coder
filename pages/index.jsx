@@ -78,7 +78,7 @@ export default function Home() {
 
           <h2>Popular blogs</h2>
 
-          {blogs.map((blog) => {
+          {blogs && blogs.map((blog) => {
             return (
               <div className={styles.blogItem} key={blog.slug}>
                 <Link href={`/blogpost/${blog.slug}`}>
