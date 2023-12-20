@@ -20,7 +20,7 @@ const Contact = () => {
             body: JSON.stringify(data)
         };
         try {
-            const fetchResponse = await fetch("http://localhost:3000/api/postcontact", settings);
+            const fetchResponse = await fetch("/api/postcontact", settings);
             const res = await fetchResponse.json();
             console.log("sucess")
             alert("done")
